@@ -155,6 +155,7 @@
   <ItemGroup>
     <Content Include="Content\home.css" />
     <Content Include="Content\Login.css" />
+    <Content Include="Content\NossoTime.css" />
     <Content Include="Content\Produtos.css" />
     <Content Include="Content\Serviço.css" />
     <Content Include="Content\Sobre.css" />
@@ -211,6 +212,7 @@
     </Content>
     <Content Include="Scripts\home.js" />
     <Content Include="Scripts\Login.js" />
+    <Content Include="Scripts\NossoTime.js" />
     <Content Include="Scripts\Produtos.js" />
     <Content Include="Scripts\Serviço.js" />
     <Content Include="Scripts\Sobre.js" />
@@ -229,6 +231,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="IMG\NossoTime\" />
     <Folder Include="IMG\QuemSomos\" />
   </ItemGroup>
   <ItemGroup>
@@ -247,6 +250,8 @@
     <Content Include="Views\Home\Produtos.cshtml" />
     <Content Include="Views\Home\Serviço.cshtml" />
     <Content Include="Views\Home\Sobre.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\NossoTime.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
