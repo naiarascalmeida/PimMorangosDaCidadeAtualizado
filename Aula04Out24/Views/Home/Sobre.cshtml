@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/Content/Sobre.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="~/IMG/Home/01.png" type="image/x-icon">
+    <title>Sobre nós - Morangos da Cidade</title>
+</head>
+<body>
+    <header>
+        <a href="../Home/home.html" class="logo"><img src="~/IMG/Home/01.png" style="width: 150px; height:150px;" alt="logo"></a>
+
+        <ul class="navbar">
+            <a href="@Url.Action("Home")" class="btn btn-primary">Home</a>
+            <a href="@Url.Action("Produtos")" class="btn btn-primary">Produtos</a>
+            <a href="@Url.Action("Serviço")" class="btn btn-primary">Serviços</a>
+            <a href="@Url.Action("Sobre")" class="btn btn-primary">Sobre nós</a>
+        </ul>
+
+        <div class="main">
+            <a href=" @Url.Action("Login")" class="user"><i class="ri-user-fill"></i>Faça login ou Cadastre-se </a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <h1>Sobre nós</h1>
+    <!-- Card - Lado Esquerdo -->
+    <div class="about-us">
+        <div class="container01">
+            <div class="row">
+                <div class="flex">
+                    <h2>Sobre nós</h2>
+                    <p>Somos a Fazenda Urbana Morangos da Cidade, uma empresa dedicada ao cultivo de morangos frescos e saborosos em meio urbano. Localizada no coração da cidade, nossa fazenda utiliza técnicas de agricultura sustentável para garantir a produção de morangos de alta qualidade, livres de agrotóxicos.</p>
+                </div>
+                <div class="flex">
+                    <img src="~/IMG/Sobre/Morangos da cidade.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Missão, visão e valores  -->
+
+    <div class="container">
+        <div id="service-section">
+            <h2>Missão, Visão e Valores</h2>
+            <p id="peragraph"></p>
+            <div class="cards">
+                <div class="card">
+                    <div class="content">
+                        <h3>Nossa Missão</h3>
+                        <p>Produzir morangos frescos e saudáveis em ambiente urbano, promovendo a agricultura sustentável e oferecendo uma opção saudável e acessível para a comunidade local.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3>Nossa Visão</h3>
+                        <p> Ser reconhecida como referência na produção de morangos urbanos, contribuindo para a conscientização sobre a importância da agricultura urbana e da alimentação saudável.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3>Nossos Valores</h3>
+                        <p>Qualidade, Sustentabilidade, Responsabilidade Social e Ambiental, Inovação e Compromisso com a Comunidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Foorter -->
+        <main>
+
+        </main>
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <img src="~/IMG/Home/01.png" alt="Logo">
+                    <p class="txt">Redes sociais</p>
+
+                    <div id="footer_social_media">
+                        <a href="#" class="footer-link" id="instragam">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                        <a href="#" class="footer-link" id="linkedin">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Sobre nós</h3>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Sobre")" class="btn btn-primary">Misão</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Sobre")" class="btn btn-primary">Visão</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Sobre")" class="btn btn-primary">Valores</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Produtos</h3>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Produtos")" class="btn btn-primary">Morango Albion</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Produtos")" class="btn btn-primary">Morango Bournon</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Produtos")" class="btn btn-primary">Morango Capri</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Produtos")" class="btn btn-primary">Morango Diamante</a>
+                    </li>
+                </ul>
+                <div id="footer_subscribe">
+                    <h3>Newsletter</h3>
+                    <p>
+                        Digite seu e-mail para ser notificado sobre
+                        nossas soluções
+                    </p>
+                    <div id="input_group">
+                        <input type="email" id="email">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_copyright">
+                &#169
+                2024 Todos os direitos reservados
+        </footer>
+        <!--Link JS-->
+        <script type="text/javascript" src="~/Scripts/Sobre.js"></script>
+</body>
+</html>

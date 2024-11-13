@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/Content/Produtos.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="~/IMG/Home/01.png" type="image/x-icon">
+    <title>Produtos - Morangos da Cidade</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: #ffffe0;
+        }
+    </style>
+    <header>
+        <a href="../Home/home.html" class="logo"><img src="~/IMG/Home/01.png" style="width: 150px; height:150px;" alt="logo"></a>
+
+        <ul class="navbar">
+            <a href="@Url.Action("Home")" class="btn btn-primary">Home</a>
+            <a href="@Url.Action("Produtos")" class="btn btn-primary">Produtos</a>
+            <a href="@Url.Action("Serviço")" class="btn btn-primary">Serviços</a>
+            <a href="@Url.Action("Sobre")" class="btn btn-primary">Sobre nós</a>
+        </ul>
+        <div class="main">
+            <a href=" @Url.Action("Login")" class="user"><i class="ri-user-fill"></i>Faça login ou Cadastre-se </a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+
+    <!--Produtos-->
+    <!-- Card -Produtos -->
+    <div class="h1">
+        <h1>
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="imgBx" data-text="Albion">
+                <img src="~/IMG/Produtos/Morango - icon.png" style="width: 150px;" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Morango Albion</h3>
+                    <p>Este tipo é conhecido por seu sabor doce e equilibrado, além de possuir uma textura firme. É uma variedade muito popular em muitas regiões devido ao seu excelente sabor.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx" data-text="Bourbon">
+                <img src="~/IMG/Produtos/Morango - icon.png" style="width: 150px;" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Morango Bourbon</h3>
+                    <p>
+                        O Morango Bourbon, também conhecido como Morango Bourbon Vermelho, é uma variedade de morango que se destaca pelo seu sabor adocicado e aroma intenso. Ele é caracterizado por ter um formato cônico alongado e uma coloração vermelha brilhante. Essa variedade é conhecida por ser bastante suculenta e saborosa, sendo muito apreciada tanto para consumo in natura quanto para uso em sobremesas, geleias e outros pratos.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx" data-text="Capri">
+                <img src="~/IMG/Produtos/Morango - icon.png" style="width: 150px;" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Morango Capri</h3>
+                    <p>O Morango Capri é uma variedade de morango conhecida por seu sabor doce e aroma intenso. Possui um tamanho médio a grande, formato cônico e uma coloração vermelha brilhante. É uma escolha popular para consumo in natura, mas também pode ser usado em diversas receitas culinárias.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx" data-text="Diamante">
+                <img src="~/IMG/Produtos/Morango - icon.png" style="width: 150px;" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Morango Diamante</h3>
+                    <p>O Morango Diamante é uma variedade de morango conhecida por seu tamanho grande e formato cônico. Possui uma coloração vermelha intensa e brilhante, além de ser bastante suculento e saboroso. É uma escolha popular para consumo in natura, mas também pode ser utilizado em diversas receitas culinárias e sobremesas.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Foorter -->
+    <main>
+
+    </main>
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="~/IMG/Produtos/01.png" alt="Logo">
+                <p class="txt">Redes sociais</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instragam">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                </div>
+            </div>
+            <ul class="footer-list">
+                <li>
+                    <h3>Sobre nós</h3>
+                </li>
+                <li>
+                    <a href="@Url.Action("Sobre")" class="btn btn-primary">Misão</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Sobre")" class="btn btn-primary">Visão</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Sobre")" class="btn btn-primary">Valores</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="@Url.Action("Produtos")" class="btn btn-primary">Morango Albion</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Produtos")" class="btn btn-primary">Morango Bournon</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Produtos")" class="btn btn-primary">Morango Capri</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Produtos")" class="btn btn-primary">Morango Diamante</a>
+                </li>
+            </ul>
+            <div id="footer_subscribe">
+                <h3>Newsletter</h3>
+                <p>
+                    Digite seu e-mail para ser notificado sobre
+                    nossas soluções
+                </p>
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 Todos os direitos reservados
+    </footer>
+    <!--Link JS-->
+    <script type="text/javascript" src="~/Scripts/Produtos.js"></script>
+</body>
+</html>

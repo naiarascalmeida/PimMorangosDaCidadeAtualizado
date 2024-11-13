@@ -1,0 +1,9 @@
+CREATE DATABASE BdSalgados
+use BdSalgados
+
+create table login(
+idLogin int not null identity,
+email varchar(75) not null,
+senha varchar(15) not null,
+whatsapp varchar(12) not null,
+constraint pklogin primary key (idLogin))

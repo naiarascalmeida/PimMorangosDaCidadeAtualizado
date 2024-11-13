@@ -1,0 +1,485 @@
+﻿/* Fontes do google importação */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 1px;
+}
+
+:root {
+    --bg-color: #ffffe0;
+    --text-color: #000;
+    --main-color: #Ff0000;
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #fff;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+body {
+    min-height: 50vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px red;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+}
+
+    .navbar a {
+        color: var(--text-color);
+        font-size: 1.1rem;
+        font-weight: 300;
+        padding: 5px 0;
+        margin: 0px 20px;
+        transition: all .50s ease;
+    }
+
+        .navbar a:hover {
+            color: var(--main-color);
+        }
+
+        .navbar a.active {
+            color: var(--main-color);
+        }
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+    .main a {
+        margin-right: 25px;
+        margin-left: 10px;
+        color: var(--text-color);
+        font-size: 1.1rem;
+        font-weight: 300;
+        transition: all .50s ease;
+    }
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+    .user i {
+        color: var(--main-color);
+        font-size: 28px;
+        margin-right: 7px;
+    }
+
+.main a:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--main-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+H1 {
+    margin: 0;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4vw;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: #Ff0000;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+
+/* Card - curiosidades sobre o morango - Esquerdo */
+
+.about-us {
+    padding: 470px 0px;
+}
+
+.container01 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+.about-us h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-us p {
+    font-size: 25px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-us img {
+    display: block;
+    max-width: 140%;
+    margin: auto;
+    margin: 0 auto;
+}
+
+/* Missão, visão e valores */
+
+#service-section {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+    #service-section h2 {
+        color: #Ff0000;
+        font-size: 4rem;
+        margin-bottom: 100px;
+        position: relative;
+    }
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 200px;
+    z-index: 9;
+    margin-top: 20px;
+}
+
+    .cards .card {
+        height: 380px;
+        width: 480px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0 8%;
+        background: #F1E0C1;
+        position: relative;
+        border-radius: 10px;
+    }
+
+        .cards .card::before {
+            position: absolute;
+            content: " ";
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+            background: #Ff0000;
+            transition: .6s;
+            transform: rotate(0deg);
+            z-index: -1;
+        }
+
+        .cards .card:hover.card::before {
+            transform: rotate(10deg);
+        }
+
+        .cards .card h3 {
+            font-size: 2.2rem;
+            color: #000000;
+            margin-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        .cards .card .content p {
+            color: #000000;
+            font-size: 1.30rem;
+            margin-bottom: 20px
+        }
+
+/* foooter */
+main {
+    height: 40vh;
+}
+
+footer {
+    width: 100%;
+    color: red;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+    #footer_social_media .footer-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        color: var(--color-neutral-40);
+        border-radius: 50%;
+        transition: all 0.4s;
+    }
+
+        #footer_social_media .footer-link i {
+            font-size: 1.25rem;
+        }
+
+        #footer_social_media .footer-link:hover {
+            opacity: 0.8;
+        }
+
+#instragam {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+
+#linkedin {
+    background-color: #0077B5;
+}
+
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+    .footer-list .footer-link {
+        color: #000;
+        transition: all 0.4s;
+    }
+
+        .footer-list .footer-link:hover {
+            color: red;
+        }
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+    #footer_subscribe p {
+        color: #000;
+    }
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: #ffffe0;
+    border-radius: 4px;
+}
+
+    #input_group input {
+        all: unset;
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    #input_group button {
+        background-color: red;
+        border: none;
+        color: var(--color-neutral-40);
+        padding: 0px 1.25rem;
+        font-size: 1.125rem;
+        height: 100%;
+        border-radius: 0px 4px 4px 0px;
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+
+        #input_group button:hover {
+            opacity: 0.8;
+        }
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    font-size: 0.9rem;
+    padding: 0.9rem;
+    font-weight: 100;
+}
+
+
+/* header */
+@media (max-width: 1090px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 105%;
+        right: -100%;
+        width: 270px;
+        height: 20vh;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 0px;
+        border-radius: all .50s ease;
+    }
+
+        .navbar a {
+            display: block;
+            margin: 12px 0;
+            padding: 0px 25px;
+            transition: all .50s ease;
+        }
+
+            .navbar a:hover {
+                color: var(--text-color);
+                transform: translateY(5px);
+            }
+
+            .navbar a.active {
+                color: var(--text-color);
+            }
+
+        .navbar.open {
+            right: 0%;
+        }
+}
+
+@media (max-width: 1280px) {
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+
+    .navbar a {
+        padding: 8px 0;
+        margin: 0px 25px;
+    }
+}
+
+/* Card - curiosidades sobre o morango - Esquerdo - responsividade */
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .flex {
+        max-width: 100%;
+    }
+
+    .about-us h2 {
+        font-size: 31px;
+    }
+
+    about-us p {
+        font-size: 16px;
+    }
+}
+
+/* Missão, visão e valores */
+
+@media(max-width:1100px) {
+    #service-section h2 {
+        margin-top: 30px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    #service-section #peragraph {
+        width: 80%;
+    }
+}
+
+@media(max-width:p00px) {
+    .cards .card {
+        height: 300px;
+        width: 400px;
+        margin: 20px 0;
+    }
+}
+
+/* Footer */
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
