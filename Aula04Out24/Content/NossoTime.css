@@ -1,2 +1,357 @@
-﻿body {
+﻿/* Fontes do google importação */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 1px;
+}
+
+:root {
+    --text-color: #000;
+    --main-color: #Ff0000;
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #fff;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: monospace;
+}
+
+.btn {
+    background-color: transparent !important;
+    border: none !important;
+    color: inherit !important;
+    box-shadow: none !important;
+    cursor: pointer; /* Adiciona o cursor de ponteiro ao passar o mouse */
+}
+
+    .btn:hover {
+        color: red !important; /* Cor vermelha ao passar o mouse */
+        transition: color 0.3s ease; /* Transição suave */
+    }
+
+/* Header */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px red;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+}
+
+    .navbar a {
+        color: var(--text-color);
+        font-size: 1.1rem;
+        font-weight: 300;
+        padding: 5px 0;
+        margin: 0px 20px;
+        transition: all .50s ease;
+    }
+
+        .navbar a:hover {
+            color: var(--main-color);
+        }
+
+        .navbar a.active {
+            color: var(--main-color);
+        }
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+    .main a {
+        margin-right: 25px;
+        margin-left: 10px;
+        color: var(--text-color);
+        font-size: 1.1rem;
+        font-weight: 300;
+        transition: all .50s ease;
+    }
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+    .user i {
+        color: var(--main-color);
+        font-size: 28px;
+        margin-right: 7px;
+    }
+
+.main a:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--main-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+H1 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Container do carrossel */
+.carousel {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 125vh; /* Garantir que ocupe toda a altura da tela */
+    position: relative; /* Necessário para posicionar os botões abaixo da imagem */
+}
+
+
+/* Estilo dos cartões */
+.carousel-item .card {
+    margin: 0 20px; /* Espaçamento entre os cartões */
+    flex: 0 0 45%; /* Define a largura do cartão como 45% (ajuste conforme necessário) */
+    max-width: 500px; /* Define um limite máximo para o tamanho do cartão */
+    min-width: 400px; /* Define um limite mínimo para o tamanho do cartão */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    position: relative; /* Necessário para que os botões sejam posicionados abaixo da imagem */
+}
+
+    /* Estilo das imagens dentro dos cartões */
+    .carousel-item .card img {
+        height: 350px; /* Ajusta a altura da imagem */
+        object-fit: cover; /* Faz com que a imagem se ajuste bem ao espaço */
+        border-radius: 8px; /* Arredonda os cantos da imagem */
+    }
+
+/* Estilo para os botões de navegação, agora em uma coluna */
+.carousel-controls {
+    position: absolute; /* Posiciona os botões abaixo das imagens */
+    width: 50%; /* Garante que a área de controle ocupe toda a largura do carrossel */
+}
+
+/* Estilo dos ícones de navegação (anterior e próximo) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #Ff0000; /* Cor de fundo dos ícones de navegação */
+    border-radius: 50%; /* Deixa os ícones redondos */
+    padding: 10px; /* Adiciona preenchimento ao redor do ícone */
+}
+
+
+/* Contêiner de cards lado a lado */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+    margin-top: -100px;
+}
+
+/* Estilo de cada card */
+.card {
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: -6em;
+}
+
+/* Centralizar o conteúdo dentro do card */
+.card-body {
+    text-align: center;
+}
+
+/* Imagens dos cards */
+.card-img-top,
+.card-img-bottom {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+/* foooter */
+main {
+    height: 70vh;
+}
+
+footer {
+    width: 100%;
+    color: red;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+    #footer_social_media .footer-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        color: var(--color-neutral-40);
+        border-radius: 50%;
+        transition: all 0.4s;
+    }
+
+        #footer_social_media .footer-link i {
+            font-size: 1.25rem;
+        }
+
+        #footer_social_media .footer-link:hover {
+            opacity: 0.8;
+        }
+
+#instragam {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+
+#linkedin {
+    background-color: #0077B5;
+}
+
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+    .footer-list .footer-link {
+        color: #000;
+        transition: all 0.4s;
+    }
+
+        .footer-list .footer-link:hover {
+            color: red;
+        }
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+    #footer_subscribe p {
+        color: #000;
+    }
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: #ffffe0;
+    border-radius: 4px;
+}
+
+    #input_group input {
+        all: unset;
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    #input_group button {
+        background-color: red;
+        border: none;
+        color: var(--color-neutral-40);
+        padding: 0px 1.25rem;
+        font-size: 1.125rem;
+        height: 100%;
+        border-radius: 0px 4px 4px 0px;
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+
+        #input_group button:hover {
+            opacity: 0.8;
+        }
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    font-size: 0.9rem;
+    padding: 0.9rem;
+    font-weight: 100;
+}
+
+
+/* Responsividade: cards ocupam toda a largura em telas menores */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+    }
 }

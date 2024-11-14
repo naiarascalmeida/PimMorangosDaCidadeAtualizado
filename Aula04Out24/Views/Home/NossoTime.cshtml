@@ -1,7 +1,239 @@
-﻿
-@{
-    ViewBag.Title = "NossoTime";
-}
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swa" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/NossoTime.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="~/IMG/NossoTime/Morango - icon.png" type="LOGO">
+    <title>Nosso Time</title>
+</head>
+<body style="background-color: #ffffe0;">
+    <header>
+        <a href="../Home/home.html" class="logo"><img src="~/IMG/NossoTime/01.png" style="width: 150px; height:150px;" alt="logo"></a>
 
-<h2>NossoTime</h2>
+        <ul class="navbar">
 
+            <ul class="navbar">
+                <a href="@Url.Action("Home")" class="btn btn-primary">Home</a>
+                <a href="@Url.Action("Produtos")" class="btn btn-primary">Produtos</a>
+                <a href="@Url.Action("Serviço")" class="btn btn-primary">Serviços</a>
+                <a href="@Url.Action("Sobre")" class="btn btn-primary">Sobre nós</a>
+                <a href="@Url.Action("NossoTime")" class="btn btn-primary">Nosso Time</a>
+            </ul>
+        </ul>
+        <div class="main">
+            <a href=" @Url.Action("Login")" class="user"><i class="fa-solid fa-user"></i>Faça login ou Cadastre-se </a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Primeiro bloco de cartões -->
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                    <div class="card" style="max-width: 300px;">
+                        <img src="~/IMG/NossoTime/nai.jpg" />
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#ff0000">Naiara Santaigo</h5>
+                            <p class="card-text" style="color:#000000">Foi na Fazenda Morangos da Cidade, onde tive a minha primeira oportunidade, que iniciei minha carreira há mais de 5 anos, começando como estagiário e crescendo com dedicação e aprendizado contínuo</p>
+                            <p class="card-text"><small class="text-body-secondary">Coordenadora de TI</small></p>
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 300px;">
+                        <img src="~/IMG/NossoTime/ni.jpg" />
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#ff0000">Nicole Castro</h5>
+                            <p class="card-text" style="color:#000000">
+                                "Comecei como estagiária na Fazenda Morangos da Cidade e cresci profissionalmente na área de Design. Hoje, sou responsável por criar projetos visuais que reforçam a identidade da fazenda."
+                            </p>
+                            <p class="card-text"><small class="text-body-secondary">Design</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Segundo bloco de cartões -->
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="card" style="max-width: 300px;">
+                        <img src="~/IMG/NossoTime/bia.jpg" />
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#ff0000">Ana Beatriz</h5>
+                            <p class="card-text" style="color:#000000">"Minha jornada começou na Fazenda Morangos da Cidade, onde me especializei em desenvolver interfaces funcionais e atraentes. Como Programadora Front-end, foco em melhorar a experiência do usuário."</p>
+                            <p class="card-text"><small class="text-body-secondary">Programadora Front-end</small></p>
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 300px;">
+                        <img src="~/IMG/NossoTime/mari.jpg" />
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#ff0000">Mariane Biselli</h5>
+                            <p class="card-text" style="color:#000000">"Como Diretora de TI, na Fazenda Morangos da Cidade, fui responsável por alinhar a tecnologia com as necessidades do negócio, impulsionando a inovação e a eficiência na operação."</p>
+                            <p class="card-text"><small class="text-body-secondary">Diretora de TI</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Terceiro bloco de cartões -->
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="card" style="max-width: 300px;">
+                        <img src="~/IMG/NossoTime/gi.jpg" />
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#ff0000">Giovanna Andrade</h5>
+                            <p class="card-text" style="color:#000000">
+                                "Na Fazenda Morangos da Cidade, minha missão é transformar dados em insights que otimizam os processos e ajudam na tomada de decisões estratégicas."
+                            </p>
+                            <p class="card-text"><small class="text-body-secondary">Analista de Dados</small></p>
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 300px;">
+                        <img src="~/IMG/NossoTime/rafa.jpg" />
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#ff0000">Rafel Caroba</h5>
+                            <p class="card-text" style="color:#000000">
+                                "Como Programador Java, contribuo para o desenvolvimento de sistemas robustos e eficientes, garantindo a continuidade das operações da Fazenda Morangos da Cidade."
+
+                            </p>
+                            <p class="card-text"><small class="text-body-secondary">Programador Java</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botões de navegação -->
+        <div class="carousel-controls">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Nossa Equipe -->
+    <h1 style="margin-top:-2%; font-size: 4em; font-weight: bold; color:#Ff0000; ">Nosso Time</h1>
+    <div class="card-container">
+        <div class="card mb-3">
+            <img src="~/IMG/NossoTime/Primeira.jpg" />
+            <div class="card-body">
+                <h5 class="card-title" style="color:#ff0000">Perspectivas dos colaboradores</h5>
+                <p class="card-text">No escritório, nosso foco é garantir que as tarefas sejam executadas com eficiência e organização, cumprindo prazos e mantendo a qualidade. Buscamos otimizar processos para um ambiente mais produtivo e harmonioso.</p>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <img src="~/IMG/NossoTime/Segunda.jpg" />
+            <div class="card-body">
+                <h5 class="card-title" style="color:#ff0000">Perspectivas dos colaboradores</h5>
+                <p class="card-text">A cada manhã, revisamos as metas e planejamos o andamento dos projetos em equipe.</p>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <img src="~/IMG/NossoTime/Terceira.jpg" />
+            <div class="card-body">
+                <h5 class="card-title" style="color:#ff0000">Perspectivas dos colaboradores</h5>
+                <p class="card-text">Valorizamos um ambiente colaborativo, onde todos têm a oportunidade de compartilhar ideias e soluções criativas.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Título grande adicionado aqui -->
+    <div style="text-align: center; margin-top: -750px;">
+        <h4 style="font-size: 4em; font-weight: bold; color: #ff0000;">Nosso Dia a Dia</h4>
+    </div>
+
+    <!-- Foorter -->
+    <main>
+
+    </main>
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="~/IMG/NossoTime/01.png" />
+                <p class="txt">Redes sociais</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instragam">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                </div>
+            </div>
+            <ul class="footer-list">
+                <li>
+                    <h3>Sobre nós</h3>
+                </li>
+                <li>
+                    <a href="sobre/sobre.html" class="footer-link">Misão</a>
+                </li>
+                <li>
+                    <a href="sobre/sobre.html" class="footer-link">Visão</a>
+                </li>
+                <li>
+                    <a href="sobre/sobre.html" class="footer-link">Valores</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="../Produtos/produto.html" class="footer-link">Morango Camarosa</a>
+                </li>
+                <li>
+                    <a href="../Produtos/produto.html" class="footer-link">Morango Selva</a>
+                </li>
+                <li>
+                    <a href="../Produtos/produto.html" class="footer-link">Iogurte de morango</a>
+                </li>
+            </ul>
+            <div id="footer_subscribe">
+                <h3>Newsletter</h3>
+                <p>
+                    Digite seu e-mail para ser notificado sobre
+                    nossas soluções
+                </p>
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 Todos os direitos reservados
+    </footer>
+
+
+    <!--Link JS-->
+    <script type="text/javascript" src="sobre.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
