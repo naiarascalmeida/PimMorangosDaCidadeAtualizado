@@ -191,11 +191,20 @@
     <Content Include="IMG\Home\origem.jpg" />
     <Content Include="IMG\Home\Quitanda do Sabor.jpg" />
     <Content Include="IMG\Login\Morango - icon.png" />
+    <Content Include="IMG\NossoTime\01.png" />
+    <Content Include="IMG\NossoTime\bia.jpg" />
+    <Content Include="IMG\NossoTime\gi.jpg" />
+    <Content Include="IMG\NossoTime\mari.jpg" />
+    <Content Include="IMG\NossoTime\Morango - icon.png" />
+    <Content Include="IMG\NossoTime\nai.jpg" />
+    <Content Include="IMG\NossoTime\Nicole.jpg" />
+    <Content Include="IMG\NossoTime\Primeira.jpg" />
+    <Content Include="IMG\NossoTime\rafa.jpg" />
+    <Content Include="IMG\NossoTime\Segunda.jpg" />
+    <Content Include="IMG\NossoTime\Terceira.jpg" />
     <Content Include="IMG\Produtos\01.png" />
-    <Content Include="IMG\Produtos\010.jpeg" />
     <Content Include="IMG\Produtos\Morango - icon.png" />
     <Content Include="IMG\Serviços\01.png" />
-    <Content Include="IMG\Serviços\02.png" />
     <Content Include="IMG\Serviços\Morango - icon.png" />
     <Content Include="IMG\Sobre\01.png" />
     <Content Include="IMG\Sobre\Morango - icon.png" />
@@ -231,8 +240,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="IMG\NossoTime\" />
-    <Folder Include="IMG\QuemSomos\" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="Models\ModelCliente.edmx">

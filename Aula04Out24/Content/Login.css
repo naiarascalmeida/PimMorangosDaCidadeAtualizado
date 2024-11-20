@@ -11,11 +11,19 @@ input {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.text-danger {
+    color: red;
+    margin-left: 10px; /* Espaçamento opcional entre a mensagem e o campo */
+    font-size: 1em; /* Tamanho opcional para diferenciar do texto normal */
+    line-height: 6; /* Ajuste a altura conforme necessário */
+    white-space: nowrap;
+}
+
+
 .container {
     position: relative;
     width: 100%;
     background-color: #ffffe0;
-    ;
     min-height: 100vh;
     overflow: hidden;
 }
@@ -71,7 +79,7 @@ form {
     max-width: 380px;
     width: 100%;
     background-color: #ffffff;
-    margin: 10px 0;
+    margin: 18px 0;
     height: 55px;
     border-radius: 55px;
     display: grid;
@@ -82,7 +90,7 @@ form {
 
     .input-field i {
         text-align: center;
-        line-height: 55px;
+        line-height: 60px;
         color: #acacac;
         transition: 0.5s;
         font-size: 1.1rem;
@@ -207,25 +215,36 @@ form {
     transition-delay: 0.6s;
 }
 
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    padding-top: 20rem; /* Controla a distância do topo */
+    height: 300px; /* Define a altura da área */
+}
+
 .panel h3 {
     font-weight: 600;
     line-height: 1;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin: 0.5rem 0; /* Controla o espaço ao redor do título */
 }
 
 .panel p {
-    font-size: 0.95rem;
-    padding: 0.7rem 0;
-}
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        margin: 0; /* Remove qualquer margem padrão */
+    }
 
 .btn.transparent {
     margin: 0;
     background: none;
     border: 2px solid #fff;
-    width: 130px;
+    width: 200px;
     height: 41px;
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
 }
 
 .right-panel .image,
@@ -393,13 +412,13 @@ form {
         padding: 1.5rem;
     }
 
-        .container:before {
-            bottom: 72%;
-            left: 50%;
-        }
+    .container:before {
+        bottom: 72%;
+        left: 50%;
+    }
 
-        .container.sign-up-mode:before {
-            bottom: 23%;
-            left: 50%;
-        }
+    .container.sign-up-mode:before {
+        bottom: 23%;
+        left: 50%;
+    }
 }

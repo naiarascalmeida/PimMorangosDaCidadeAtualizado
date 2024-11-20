@@ -17,13 +17,14 @@
         }
     </style>
     <header>
-        <a href="../Home/home.html" class="logo"><img src="~/IMG/Home/01.png" style="width: 150px; height:150px;" alt="logo"></a>
+        <a href="@Url.Action("Home")" class="logo"><img src="~/IMG/Home/01.png" style="width: 150px; height:150px;" alt="logo"></a>
 
         <ul class="navbar">
             <a href="@Url.Action("Home")" class="btn btn-primary">Home</a>
-            <a href="@Url.Action("Produtos")" class="btn btn-primary">Produtos</a>
-            <a href="@Url.Action("Serviço")" class="btn btn-primary">Serviços</a>
+            <a style="color:red" href="@Url.Action("Produtos")" class="btn btn-primary">Produtos</a>
+            <a href="@Url.Action("Login")" class="btn btn-primary">Serviços</a>
             <a href="@Url.Action("Sobre")" class="btn btn-primary">Sobre nós</a>
+            <a href="@Url.Action("NossoTime")" class="btn btn-primary">Nosso Time</a>
         </ul>
         <div class="main">
             <a href=" @Url.Action("Login")" class="user"><i class="ri-user-fill"></i>Faça login ou Cadastre-se </a>
@@ -92,6 +93,7 @@
 
     </div>
 
+
     <!-- Foorter -->
     <main>
 
@@ -99,7 +101,7 @@
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
-                <img src="~/IMG/Produtos/01.png" alt="Logo">
+                <img src="~/IMG/Home/01.png" alt="Logo">
                 <p class="txt">Redes sociais</p>
 
                 <div id="footer_social_media">
@@ -170,6 +172,7 @@
         <div id="footer_copyright">
             &#169
             2024 Todos os direitos reservados
+        </div>
     </footer>
     <!--Link JS-->
     <script type="text/javascript" src="~/Scripts/Produtos.js"></script>

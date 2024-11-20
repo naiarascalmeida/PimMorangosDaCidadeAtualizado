@@ -41,7 +41,7 @@ namespace Aula04Out24.Models
         public string TelefoneCliente { get; set; }
 
         [Required(ErrorMessage = "A senha é obrigatória.")]
-        [StringLength(4, MinimumLength = 4, ErrorMessage = "A senha deve ter exatamente 4 .")]
+        [StringLength(4, MinimumLength = 4, ErrorMessage = "A senha deve ter exatamente 4 caracteres.")]
         public string SenhaCliente { get; set; }
 
     }

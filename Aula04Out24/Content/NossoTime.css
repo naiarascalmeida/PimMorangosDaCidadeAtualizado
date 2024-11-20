@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0%;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
     list-style: none;
     letter-spacing: 1px;
@@ -178,6 +178,8 @@ H1 {
 }
 
 
+
+/* Dia a Dia */
 /* Contêiner de cards lado a lado */
 .card-container {
     display: flex;

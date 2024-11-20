@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="~/IMG/Login/Morango - icon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+
     <link rel="stylesheet" href="~/Content/Login.css" />
     <title>Login - Morangos da Cidade</title>
 </head>
@@ -31,6 +35,7 @@
                 @using (Html.BeginForm("Login", "Home", FormMethod.Post, new { @class = "sign-in-form" }))
                 {
                     <h2 class="title">Login</h2>
+                    @Html.AntiForgeryToken()
                     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                     <div class="input-field">
                         <i class="fas fa-user"></i>
@@ -53,6 +58,7 @@
                 @using (Html.BeginForm("Login", "Home", FormMethod.Post, new { @class = "sign-up-form" }))
                 {
                     <h2 class="title">Cadastre-se</h2>
+                    @Html.AntiForgeryToken()
                     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                     <div class="input-field">
                         <i class="fas fa-user"></i>
@@ -93,14 +99,14 @@
             <div class="panel left-panel">
                 <div class="content">
                     <h3>Novo aqui?</h3>
-                    <p>Cadastre-se com segurança e proteção de dados. Saiba mais clicando aqui!</p>
+                    <p>Cadastre-se com segurança e proteção de dados.</p>
                     <button class="btn transparent" id="sign-up-btn">Cadastre-se</button>
                 </div>
             </div>
             <div class="panel right-panel">
                 <div class="content">
                     <h3>Já tem uma conta?</h3>
-                    <p>Inicie sessão agora para acessar rapidamente sua conta e todas as suas informações</p>
+                    <p>Inicie sessão agora para acessar rapidamente sua conta</p>
                     <button class="btn transparent" id="sign-in-btn">Login</button>
                 </div>
             </div>
